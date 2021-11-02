@@ -1,24 +1,6 @@
-// // TODO: Create a function that returns a license badge based on which license is passed in
-// // If there is no license, return an empty string
-// function renderLicenseBadge(license) {}
+function generateMarkdown(responses) {
 
-// // TODO: Create a function that returns the license link
-// // If there is no license, return an empty string
-// function renderLicenseLink(license) {}
-
-// // TODO: Create a function that returns the license section of README
-// // If there is no license, return an empty string
-// function renderLicenseSection(license) {}
-
-// // TODO: Create a function to generate markdown for README
-// function generateMarkdown(data) {
-//   return `# ${data.title}
-
-// `;
-// }
-
-function generateMarkdown(responses, githubLink) {
-  `# Proyect Name is: ${responses.title}
+  return `# Proyect Name is: ${responses.title}
   
   ## Table of contents
   1. [Description](#description)
@@ -29,29 +11,29 @@ function generateMarkdown(responses, githubLink) {
   6. [Tests](#tests)
   7. [Questions](#questions)
   
-  ## Project description <a name="description"></a>
+  <h2 id="description"> Project Description </h2>
   ${responses.description}
   
-  ## Installation <a name="installation"></a>
+  ## Installation 
   ${responses.installation}
   
-  ## Usage <a name="usage"></a>
+  ## Usage 
   ${responses.usage}
   
-  ## License <a name="license"></a>
+  ## License 
   ${responses.license}
   
-  ## Credits <a name="credits"></a>
+  ## Credits 
   ${responses.credits}
   
-  ## Tests <a name="tests"></a>
+  ## Tests 
   ${responses.tests}
   
-  ## Questions <a name="questions"></a>
+  ## Questions 
   If you have any questions, please contact me to the information listed below.
   
   *Email: ${responses.email}
-  *GitHub: ${githubLink}
+  *GitHub: [${responses.github}](https://github.com/${responses.github})
   
   `
   }
