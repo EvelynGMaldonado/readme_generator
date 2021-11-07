@@ -9,7 +9,7 @@ function mylicenseBadge(license) {
     licenseBadge = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
   }
   if (license === "GNU GPLv3") {
-    licenseBadge = `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
+    licenseLink =     licenseBadge = `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
   }
   if (license === "Apache License 2.0") {
     licenseBadge = `![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`;
@@ -26,7 +26,7 @@ function mylicenseLink(license) {
     licenseLink = `[GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0)`;
   }
   if (license === "Apache License 2.0") {
-    licenseLink = `[Apache License 2.0](https://opensource.org/licenses/Apache-2.0)`;
+`[Apache License 2.0](https://opensource.org/licenses/Apache-2.0)`;
   }
   return licenseLink;
 };
@@ -57,7 +57,7 @@ function generateMarkdown(responses) {
 
   return `
   
-  ${licenseBadge}
+  ${mylicenseBadge()}
 
   # Proyect Name is: ${responses.title}
   
@@ -83,8 +83,8 @@ function generateMarkdown(responses) {
   ${responses.license}
   ${mylicenseLink(responses.license[0])}
   ${mylicenseSection(responses.license[0])}
-  ${licenseLink}
-  ${licenseSection}
+  ${mylicenseLink()}
+  ${mylicenseSection()}
   
   ## Credits 
   ${responses.credits}

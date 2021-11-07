@@ -2,7 +2,7 @@
   
   
 
-  # Proyect Name is: MY PROJECT
+  # Proyect Name is: why not??
   
   ## Table of contents
   1. [Description](#description)
@@ -14,13 +14,13 @@
   7. [Questions](#questions)
   
   <h2 id="description"> Project Description </h2>
-  this is a brief description
+  exactly
   
   ## Installation 
-  steps one two and three
+  tea AT NIGHT
   
   ## Usage 
-  i need to sleep
+  the instructios go here
   
   ## License 
   GNU GPLv3 License
@@ -30,10 +30,10 @@
   
   
   ## Credits 
-  evelyn
+  evelyn G Maldonado
   
   ## Tests 
-  nope nope
+  i love trix
   
   ## Questions 
   If you have any questions, please contact me to the information listed below.
