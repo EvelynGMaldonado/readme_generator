@@ -1,8 +1,9 @@
 
   
-  
+  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://opensource.org/licenses/gpl-3.0)
 
-  # Proyect Name is: why not??
+
+  # Proyect Name is: today is sunday
   
   ## Table of contents
   1. [Description](#description)
@@ -14,31 +15,28 @@
   7. [Questions](#questions)
   
   <h2 id="description"> Project Description </h2>
-  exactly
+  i hope my badge works this time
   
   ## Installation 
-  tea AT NIGHT
+  the steps one two three
   
   ## Usage 
-  the instructios go here
+  here go the instructions
   
   ## License 
-  GNU GPLv3 License
-  
-  
-  
-  
-  
+  This application is covered under the GNU GPLv3.0 License.
+
   ## Credits 
-  evelyn G Maldonado
+  evelyn
   
   ## Tests 
-  i love trix
+  nope maybe later
   
   ## Questions 
   If you have any questions, please contact me to the information listed below.
   
   *Email: evelyn.gmaldonado@gmail.com
+  <br>
   *GitHub: [EvelynGMaldonado](https://github.com/EvelynGMaldonado)
   
   

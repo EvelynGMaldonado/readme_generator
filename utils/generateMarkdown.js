@@ -1,65 +1,66 @@
-let licenseBadge = "";
-let licenseLink = "";
-let licenseSection = "";
+// let licenseBadge = "";
+// let licenseLink = "";
+// let licenseSection = "";
 
 
-function mylicenseBadge(license) {
-  let licenseBadge = "";
-  if (license === "MIT") {
-    licenseBadge = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
-  }
-  if (license === "GNU GPLv3") {
-    licenseLink =     licenseBadge = `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
-  }
-  if (license === "Apache License 2.0") {
-    licenseBadge = `![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`;
-  }
-  return licenseBadge;
-};
 
-function mylicenseLink(license) {
-  let licenseLink = "";
-  if (license === "MIT") {
-    licenseLink = `[MIT](https://opensource.org/licenses/MIT)`;
-  }
-  if (license === "GNU GPLv3") {
-    licenseLink = `[GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0)`;
-  }
-  if (license === "Apache License 2.0") {
-`[Apache License 2.0](https://opensource.org/licenses/Apache-2.0)`;
-  }
-  return licenseLink;
-};
+// function mylicenseBadge(license) {
+//   let licenseBadge = "";
+//   if (license === "MIT") {
+//     licenseBadge = `![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)`;
+//   }
+//   if (license === "GNU GPLv3") {
+//     licenseBadge = `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
+//   }
+//   if (license === "Apache License 2.0") {
+//     licenseBadge = `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`;
+//   }
+//   return licenseBadge;
+// };
 
-function mylicenseSection(license) {
-  let licenseSection = "";
+// function mylicenseLink(license) {
+//   let licenseLink = "";
+//   if (license === "MIT") {
+//     licenseLink = `[MIT](https://opensource.org/licenses/MIT)`;
+//   }
+//   if (license === "GNU GPLv3") {
+//     licenseLink = `[GNU GPL v3](https://opensource.org/licenses/gpl-3.0)`;
+//   }
+//   if (license === "Apache License 2.0") {
+//     licenseLink = `[Apache License 2.0](https://opensource.org/licenses/Apache-2.0)`;
+//   }
+//   return licenseLink;
+// };
+
+// function mylicenseSection(license) {
+//   let licenseSection = "";
   
-  if (license === "MIT") {
-    licenseSection = `This application is covered under the MIT License. \n
-    Copyright © 2021 Chaitra Srinivasamurthy.`;
-  }
-  if (license === "GNU GPLv3") {
-    licenseSection = `Copyright © 2021 Free Software Foundation, Inc. <https://fsf.org/> \n
-    Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.`;
-  }
-  if (license === "Apache License 2.0") {
-    licenseSection = `Licensed under the Apache License, Version 2.0 (the "License"). \n
-    Copyright © 2021 Chaitra Srinivasamurthy;
-    `;
-  }
-  return licenseSection;
-}
+//   if (license === "MIT") {
+//     licenseSection = `This application is covered under the MIT License. \n
+//     Copyright © 2021 Chaitra Srinivasamurthy.`;
+//   }
+//   if (license === "GNU GPLv3") {
+//     licenseSection = `Copyright © 2021 Free Software Foundation, Inc. <https://fsf.org/> \n
+//     Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.`;
+//   }
+//   if (license === "Apache License 2.0") {
+//     licenseSection = `Licensed under the Apache License, Version 2.0 (the "License"). \n
+//     Copyright © 2021 Chaitra Srinivasamurthy;
+//     `;
+//   }
+//   return licenseSection;
+// }
 
 
 
-
-function generateMarkdown(responses) {
+function generateMarkdown(title, description, installation, usage, license, credits, tests, github, email, selectedLicense) {
 
   return `
   
-  ${mylicenseBadge()}
+  ${selectedLicense}
 
-  # Proyect Name is: ${responses.title}
+
+  # Proyect Name is: ${title}
   
   ## Table of contents
   1. [Description](#description)
@@ -71,46 +72,33 @@ function generateMarkdown(responses) {
   7. [Questions](#questions)
   
   <h2 id="description"> Project Description </h2>
-  ${responses.description}
+  ${description}
   
   ## Installation 
-  ${responses.installation}
+  ${installation}
   
   ## Usage 
-  ${responses.usage}
+  ${usage}
   
   ## License 
-  ${responses.license}
-  ${mylicenseLink(responses.license[0])}
-  ${mylicenseSection(responses.license[0])}
-  ${mylicenseLink()}
-  ${mylicenseSection()}
-  
+  This application is covered under the ${license}.
+
   ## Credits 
-  ${responses.credits}
+  ${credits}
   
   ## Tests 
-  ${responses.tests}
+  ${tests}
   
   ## Questions 
   If you have any questions, please contact me to the information listed below.
   
-  *Email: ${responses.email}
-  *GitHub: [${responses.github}](https://github.com/${responses.github})
+  *Email: ${email}
+  <br>
+  *GitHub: [${github}](https://github.com/${github})
   
   `
   }
   module.exports = generateMarkdown;
   
-
-  // licenses 
-  // apache 2.0
-  // [![Minimum node.js version](https://badgen.net/npm/node/express)](https://npmjs.com/package/express)
-
-
-  // Mit 
-  // [![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
-
-  // gplv3 license
-
-  // [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
+  // ${mylicenseLink(responses.license[0])}
+  // ${mylicenseSection(responses.license[0])}
