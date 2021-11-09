@@ -1,4 +1,50 @@
-// let licenseBadge = "";
+function generateMarkdown(title, description, installation, usage, license, credits, tests, github, email, selectedLicense) {
+
+  return `
+  
+  ${selectedLicense}
+
+
+  # Proyect Name is: ${title}
+  
+  ## Table of contents
+  1. [Description](#description)
+  2. [Installation](#installation)
+  3. [Usage](#usage)
+  4. [License](#license)
+  5. [Credits](#credits)
+  6. [Tests](#tests)
+  7. [Questions](#questions)
+  
+  <h2 id="description"> Project Description </h2>
+  ${description}
+  
+  ## Installation 
+  ${installation}
+  
+  ## Usage 
+  ${usage}
+  
+  ## License 
+  This application is covered under the ${license}.
+
+  ## Credits 
+  ${credits}
+  
+  ## Tests 
+  ${tests}
+  
+  ## Questions 
+  If you have any questions, please contact me to the information listed below.
+  
+  * Email: ${email}
+  * GitHub: [${github}](https://github.com/${github})
+  
+  `
+  }
+  module.exports = generateMarkdown;
+
+  // let licenseBadge = "";
 // let licenseLink = "";
 // let licenseSection = "";
 
@@ -51,54 +97,3 @@
 //   return licenseSection;
 // }
 
-
-
-function generateMarkdown(title, description, installation, usage, license, credits, tests, github, email, selectedLicense) {
-
-  return `
-  
-  ${selectedLicense}
-
-
-  # Proyect Name is: ${title}
-  
-  ## Table of contents
-  1. [Description](#description)
-  2. [Installation](#installation)
-  3. [Usage](#usage)
-  4. [License](#license)
-  5. [Credits](#credits)
-  6. [Tests](#tests)
-  7. [Questions](#questions)
-  
-  <h2 id="description"> Project Description </h2>
-  ${description}
-  
-  ## Installation 
-  ${installation}
-  
-  ## Usage 
-  ${usage}
-  
-  ## License 
-  This application is covered under the ${license}.
-
-  ## Credits 
-  ${credits}
-  
-  ## Tests 
-  ${tests}
-  
-  ## Questions 
-  If you have any questions, please contact me to the information listed below.
-  
-  *Email: ${email}
-  <br>
-  *GitHub: [${github}](https://github.com/${github})
-  
-  `
-  }
-  module.exports = generateMarkdown;
-  
-  // ${mylicenseLink(responses.license[0])}
-  // ${mylicenseSection(responses.license[0])}

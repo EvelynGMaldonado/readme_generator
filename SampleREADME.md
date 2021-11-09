@@ -3,7 +3,7 @@
   [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://opensource.org/licenses/gpl-3.0)
 
 
-  # Proyect Name is: today is sunday
+  # Proyect Name is: Readme Generator
   
   ## Table of contents
   1. [Description](#description)
@@ -15,28 +15,30 @@
   7. [Questions](#questions)
   
   <h2 id="description"> Project Description </h2>
-  i hope my badge works this time
+  A readme file contains useful information about a software program like how to install and use the program, as well as an explanation of what the program does.
   
   ## Installation 
-  the steps one two three
+  Inquirer package needed.
   
   ## Usage 
-  here go the instructions
+  This is a command-line application that accepts user inputs; after the user answers all the questions, then the readme file will be automatically generated. It will include different areas such as project file, description, table of contents, installation, usage, license, credits, tests and questions contact.
   
   ## License 
   This application is covered under the GNU GPLv3.0 License.
 
   ## Credits 
-  evelyn
+  Evelyn G Maldonado.
   
   ## Tests 
-  nope maybe later
+  No tests.
   
+  ## Demo
+  * Demo-link: [Readme generator demo](https://drive.google.com/file/d/1s5cyAPS8SXMkqWIwLcngkU_AKuji7hXA/view)
+
   ## Questions 
   If you have any questions, please contact me to the information listed below.
   
-  *Email: evelyn.gmaldonado@gmail.com
-  <br>
-  *GitHub: [EvelynGMaldonado](https://github.com/EvelynGMaldonado)
+  * Email: evelyn.gmaldonado@gmail.com
+  * GitHub: [EvelynGMaldonado](https://github.com/EvelynGMaldonado)
   
   
